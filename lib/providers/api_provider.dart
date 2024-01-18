@@ -3,7 +3,7 @@ import 'dart:convert';
 
 Future<double?> getTemperature(double lat, double lon) async {
   String url =
-      'https://api.openweathermap.org/data/3.0/onecall?lat=$lat&lon=$lon&units=imperial&appid=879de2474e06194d07e44bcb1fc77bf3';
+      'https://api.openweathermap.org/data/3.0/onecall?lat=$lat&lon=$lon&units=imperial&appid=[Insert API key here]';
 
   try {
     final response = await http.get(Uri.parse(url));
@@ -23,7 +23,7 @@ Future<double?> getTemperature(double lat, double lon) async {
 
 Future<double?> getWindDirection(double lat, double lon) async {
   String url =
-      'https://api.openweathermap.org/data/3.0/onecall?lat=$lat&lon=$lon&units=imperial&appid=879de2474e06194d07e44bcb1fc77bf3';
+      'https://api.openweathermap.org/data/3.0/onecall?lat=$lat&lon=$lon&units=imperial&appid=[Insert API key here]';
 
   try {
     final response = await http.get(Uri.parse(url));
@@ -45,7 +45,7 @@ Future<double?> getWindDirection(double lat, double lon) async {
 
 Future<double?> getWindSpeed(double lat, double lon) async {
   String url =
-      'https://api.openweathermap.org/data/3.0/onecall?lat=$lat&lon=$lon&units=imperial&appid=879de2474e06194d07e44bcb1fc77bf3';
+      'https://api.openweathermap.org/data/3.0/onecall?lat=$lat&lon=$lon&units=imperial&appid=[Insert API key here]';
 
   try {
     final response = await http.get(Uri.parse(url));
